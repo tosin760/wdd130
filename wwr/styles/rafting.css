@@ -1,0 +1,261 @@
+:root {
+  --primary-color: #fcfcfa61;
+  --secondary-color: #454346;
+  --accent1-color: #201b11cb;
+  --accent2-color: #c6d0d526;
+  --heading-font: "Roboto", sans-serif;
+  --text-font: "Host Grotest", sans-serif;
+}
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+header {
+ 
+  color: var(--accent1-color);
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+  display: flex;
+  padding: 10px 30px;
+  justify-content: space-between;
+ 
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+header nav a {
+  color: var(--clr-grey-3);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  transition: var(--transition);
+}
+
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--clr-grey-3);
+}
+
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0 25px;
+  margin: 40px 0;
+}
+
+.hero div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.hero div span {
+  font-size: 25px;
+}
+
+.hero div img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+}
+
+.main-component {
+  display: flex;
+}
+
+.main-component p {
+  width: 50%;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+h1 {
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  margin-top: 30px;
+}
+section {
+  display: flex;
+  align-items: center;
+  /* margin: 30px; */
+  padding: 20px;
+}
+.history-section h2 {
+  text-align: center;
+}
+
+section p {
+  padding: 16px;
+  font-size: 15px;
+}
+.socialmedia a img {
+  width: 40px;
+}
+.socialmedia {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.__history {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.__history div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.__history div p {
+  font-size: 25px;
+  max-width: 30%;
+  text-align: center;
+}
+
+.__history div img {
+  width: 30%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.rafting-adventure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.rafting-adventure div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  justify-content: space-between;
+}
+
+.rafting-adventure div figure {
+  width: 18.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.rafting-adventure div figure img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+figcaption {
+    background-color: #22222292;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+footer .dummy {
+  width: 130px;
+  height: 10px;
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.__nav_img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
